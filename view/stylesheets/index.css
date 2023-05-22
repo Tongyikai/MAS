@@ -21,7 +21,7 @@ section {
     /* background: url(c.jpg); */
 }
 body {
-    background: url(images/c.jpg);
+    background: url("images/c.jpg");
 }
 .login {
     position: relative; 
