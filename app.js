@@ -26,7 +26,8 @@ http.createServer(function(request, response) {
         sendFileContent(response, "view/index.html", "text/html");
 	} else if (request.url === "/forgotPassword") {
 		sendFileContent(response, "view/forgotPassword.html", "text/html");
-		console.log("xxxx");
+	} else if (request.url === "/signup") {
+		sendFileContent(response, "view/signup.html", "text/html");
     } else if (/^\/[a-zA-Z0-9\/]*.css$/.test(request.url.toString())) { //test() 方法用於檢測字符串是否匹配某個模式,如果字符串中有匹配的值返回 true ，否则返回 false
         sendFileContent(response, request.url.toString().substring(1), "text/css");
     } else if (/^\/[a-zA-Z0-9\/]*.jpg$/.test(request.url.toString())) { 
